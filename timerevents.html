@@ -1,0 +1,220 @@
+      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <body>
+        <form onreset="alert(`form will reset`)"onsubmit="alert(`form will submit`)">
+        user name:<input type="text"name="username">
+        <button type="submit">submit</button>
+        <button type="reset">cancel</button>
+        </form>
+        </body>
+        </html>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <script>
+              function Msg1(){
+                  document.querySelector("h1").innerHTML = "Hello !";
+              }
+              function Msg2(){
+                  document.querySelector("h1").innerHTML = "How are you ?";
+              }
+              function Msg3(){
+                  document.querySelector("h1").innerHTML = "Welcome to JavaScript";
+              }
+              var m1, m2, m3;
+              function bodyload(){
+                 m1 = setTimeout(Msg1, 3000);
+                 m2 = setTimeout(Msg2, 6000);
+                 m3 = setTimeout(Msg3, 10000);
+              }
+              function CancelClick(){
+                  clearTimeout(m2),
+                  clearTimeout(m3);
+              }
+          </script>
+      </head>
+      <body onload="bodyload()">
+          <button onclick="CancelClick()">Cancel Msg2</button>
+                 <button onclick="CancelClick()">Cancel Msg3</button>
+          <h1 align="center"></h1>
+      </body>
+      </html>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+        
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    img{
+        width: 1000px;
+        height: 500px;
+    }
+
+    </style>
+<script>
+        function msg1(){
+                document.querySelector("h1").innerHTML="Welcome to HTML " + "<img src='./images/10.jpg' >";
+
+        }
+        function msg2(){
+                  document.querySelector("h1").innerHTML="Welcome to CSS[cascading style sheet]" + "<img src='./images/19.jpg'>";
+        }
+        function msg3(){
+        document.querySelector("h1").innerHTML="welcome to Bootstrap" +  "<img src='./images/12.jpg' >";
+
+        }
+        function msg4(){
+            document.querySelector("h1").innerHTML="welcome to javascript  "+ "<img src='./images/13.png' >";
+
+        }
+        function msg5(){
+            document.querySelector("h1").innerHTML="welcome to jquery "+ "<img src='./images/14.png' >";
+
+        }
+       
+        function msg6(){
+            document.querySelector("h1").innerHTML="welcome to mongodb"+ "<img src='./images/15.png' >";
+
+        }
+        function msg7(){
+            document.querySelector("h1").innerHTML="welcome to nodejs "+ "<img src='./images/16.png' >";
+
+        }
+        function msg8(){
+            document.querySelector("h1").innerHTML="welcome to angular "+ "<img src='./images/17.png' >";
+
+        }
+        function msg9(){
+            document.querySelector("h1").innerHTML="welcome to react "+ "<img src='./images/18.jpg' >";
+
+        }
+        function bodyload(){
+           setTimeout( msg1,2000);
+           setTimeout( msg2,4100);
+           setTimeout( msg3,6000);
+           setTimeout( msg4,8000);
+           setTimeout( msg5,10000);
+           setTimeout( msg6,12000);
+           setTimeout( msg7,13000);
+           setTimeout( msg8,15000);
+           setTimeout( msg9,25000);
+
+                   }
+        </script>
+        </head>
+        <body onload="bodyload()">
+       
+        <h1 align="center"></h1>
+        </body>
+      </html>
+      
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showtime(){
+            var now=new Date();
+       document.querySelector("h1").innerHTML=now.toLocaleTimeString();
+
+        }
+        var time;
+        function bodyload(){
+            time=setInterval(showtime,1000);
+
+        }
+        function stopclick(){
+            clearInterval(time);
+        }
+        function startclick(){
+            bodyload();
+        }
+
+        </script>
+        </head>
+        <body onload="bodyload()">
+        <button onclick="stopclick()">stop</button>
+        <button onclick="startclick()">start</button>
+        <h1 align="center">time</h1>
+        </body>
+        </html>
+
+
+
+
+        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            padding-left: 1050px;
+            padding-top: 500px;
+ 
+        }
+    </style>
+
+    <script>
+        function showtime(){
+            var now=new Date();
+       document.querySelector("h1").innerHTML=now.toLocaleTimeString();
+
+        }
+        var time;
+        function bodyload(){
+            time=setInterval(showtime,1000);
+           
+
+        }
+    
+        function stopclick(){
+            clearInterval(time);
+        }
+        function startclick(){
+            bodyload();
+        }
+
+        </script>
+        </head>
+        <body onload="bodyload()">
+        <button onclick="stopclick()">stop</button>
+        <button onclick="startclick()">start</button>
+        <h1 align="center">time</h1>
+      
+        </body>
+        </html>
